@@ -1,9 +1,11 @@
-import re, ast, csv
-import pandas as pd
 import google.generativeai as genai
 from markdown import markdown
+from os import environ
+import re, ast, csv
+import pandas as pd
 
-gemini_api_key = "AIzaSyCHa4QEdndsHJfHQRSms-9qmgHr16vnX38"
+
+gemini_api_key = environ.get('GEMINI_KEY')
 excel_file = 'customer_reviews.xlsx'  # Replace with your file path
 json_file = 'output.json'    # Replace with your desired output file path
 
