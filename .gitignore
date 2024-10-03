@@ -3,3 +3,4 @@ _pycache
 testing 
 uploads/*
 venv
+config.ini
